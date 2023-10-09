@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/fondo.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Esto hará que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Esto previene que la imagen se repita */
+    background-position: center center; /* Centra la imagen en la pantalla */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    background-color: rgb(55, 55, 55); /* Blanco con algo de transparencia */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc5200;
+}

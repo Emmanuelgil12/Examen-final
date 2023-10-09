@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Juego</title>
+    <link rel="stylesheet" href="../css/compra.css">
+</head>
+<body>
+
+<!-- Botón "Volver" -->
+<button class="back-button" onclick="goBack()">Volver</button>
+
+<div class="game-container">
+    <div class="game-cover-container">
+        <img src="../Img/slime rancher.jpg" alt="Portada del Juego" class="game-cover">
+    </div>
+    
+    <div class="purchase-info">
+        <h1>Nombre del Juego</h1>
+        <p class="game-description">Breve descripción del juego.</p>
+        <p class="game-price">Precio: $19.99</p>
+        <p class="game-price-iva">Precio con IVA (21%): $39.49</p>
+        
+        <div class="payment-methods">
+            <p>Métodos de Pago:</p>
+            <img src="../Img/mastercard.png" alt="Mastercard" class="payment-icon" onclick="showModal('card')">
+            <img src="../img/visa.png" alt="Visa" class="payment-icon" onclick="showModal('card')">
+            <img src="../Img/paypal.png" alt="PayPal" class="payment-icon" onclick="showModal('paypal')">
+        </div>
+        <button class="buy-button">Comprar ahora</button>
+    </div>
+</div>
+
+<!-- Modal para datos de tarjeta -->
+<div class="modal" id="card-modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('card')">&times;</span>
+        <h2>Datos de Tarjeta</h2>
+        <input type="text" placeholder="Nombre en la tarjeta">
+        <input type="text" placeholder="Número de tarjeta">
+        <input type="text" placeholder="Fecha de vencimiento (MM/AA)">
+        <input type="text" placeholder="CVC">
+        <button class="buy-button">Confirmar pago</button>
+    </div>
+</div>
+
+<!-- Modal para datos de PayPal -->
+<div class="modal" id="paypal-modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('paypal')">&times;</span>
+        <h2>Iniciar sesión con PayPal</h2>
+        <input type="email" placeholder="Correo electrónico">
+        <input type="password" placeholder="Contraseña">
+        <button class="buy-button">Confirmar pago</button>
+    </div>
+</div>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+<script src="../compra.js"></script>
+</body>
+</html>

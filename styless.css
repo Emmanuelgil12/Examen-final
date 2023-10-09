@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #242526;
+    color: #e4e6eb;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #18191a;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #e4e6eb;
+    transition: color 0.3s;
+}
+
+nav li a:hover {
+    color: #b0b3b8;
+}
+
+.featured {
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid #3a3b3c;
+}
+
+.featured img {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+
+.catalog {
+    padding: 2rem;
+    overflow: auto;  /* Esto permitirá que el contenedor .catalog tenga un desplazamiento horizontal */
+}
+
+.games-row {
+    display: flex;   /* Hace que los juegos se muestren en línea horizontalmente */
+    gap: 1rem;       /* Añade un espacio entre los juegos */
+}
+
+.game {
+    flex: 0 0 auto;  /* Asegura que los juegos no se estiren y se mantengan con su ancho original */
+    border: 1px solid #3a3b3c;
+    border-radius: 5px;
+    margin: 0;      /* Elimina los márgenes */
+    padding: 1rem;
+    width: 200px;   /* Puedes ajustar el ancho según lo desees */
+    text-align: center;
+}
+
+/* ... (resto del código) ... */
+
+
+.game img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.payment-methods {
+    text-align: center;
+    padding: 2rem;
+}
+
+.payment-methods img {
+    margin: 0 1rem;
+    width: 50px;
+}
+
+footer {
+    background-color: #18191a;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.orange-button {
+    background-color: #ff5900; /* Color naranja */
+    color: #ffffff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón */
+    transition: background-color 0.3s; /* Efecto suave al hacer hover */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Efecto al pasar el ratón por encima del botón */
+.orange-button:hover {
+    background-color: #ff5900; /* Un tono de naranja un poco más oscuro */
+}
+
+button {
+    margin: 5px;  /* Esto añade un margen de 5px alrededor de cada botón */
+}
+
+.orange-button, .link-button {
+    display: inline-block;
+    margin: 5px;
+    vertical-align: top;  /* Asegura que ambos elementos estén alineados en la parte superior */
+}
